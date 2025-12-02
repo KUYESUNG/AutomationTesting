@@ -1,0 +1,12 @@
+node_modules/
+test-results/
+
+# local env / secrets
+.env
+
+# OS / editor junk
+.DS_Store
+.idea/
+.vscode/
+
+

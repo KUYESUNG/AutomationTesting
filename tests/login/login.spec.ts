@@ -6,7 +6,6 @@ import { LoginPage } from '../../pages/login/loginPage';
 
 const VALID_ID = process.env.HOGANGNONO_ID;
 const VALID_PASSWORD = process.env.HOGANGNONO_PASSWORD;
-console.log(VALID_ID, VALID_PASSWORD);
 
 test.describe('호갱노노 로그인', () => {
     test('유효한 계정으로 로그인 성공해야 한다', async ({ page }) => {
