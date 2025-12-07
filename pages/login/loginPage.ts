@@ -1,4 +1,5 @@
 import { Page, Locator, expect } from '@playwright/test';
+import { gotoMainPage } from '../../utils/navigation';
 
 export class LoginPage {
     readonly page: Page;
@@ -25,7 +26,7 @@ export class LoginPage {
     }
 
     async goto() {
-        await this.page.goto('https://hogangnono.com/');
+        await gotoMainPage(this.page);
     }
 
     async openLoginForm() {
