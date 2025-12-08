@@ -10,7 +10,6 @@
 
 * 로그인 이후 주요 기능 사용 흐름 자동화
 * 단지 검색 기능 검증
-* 단지 상세 페이지 정보 렌더링 확인
 * 알림 등록/삭제 기능 검증
 * 핵심 사용자 경험(UX) 흐름을 우선적으로 자동화
 
@@ -27,8 +26,6 @@ e2e/
  │    │   └─ login.page.ts
  │    ├─ search               # 단지 검색 
  │    │   └─ search.page.ts
- │    └─ detail               # 단지 상세 페이지
- │    │   └─ aptDetail.page.ts
  │    └─ notification         # 알림 설정
  │        └─ notification.page.ts
  ├─ tests/                # 테스트 시나리오
@@ -36,8 +33,6 @@ e2e/
  │    │   └─ login.spec.ts
  │    ├─ search               
  │    │   └─ search.spec.ts
- │    ├─ detail               
- │    │   └─ aptDetail.spec.ts
  │    └─ notification
  │        └─ notification.page.ts
  │
@@ -58,12 +53,7 @@ e2e/
 * 검색창을 통한 단지명 검색
 * 지도 렌더링 및 검색 결과 확인
 
-### 3) 단지 상세 페이지 기능
-
-* 특정 아파트 선택 후 상세 정보 접근
-* 실거래가, 호가, 단지 정보 등 렌더링 검증
-
-### 4) 알림 설정 기능
+### 3) 알림 설정 기능
 
 * 알림 추가 및 삭제 동작 확인
 * 관심 목록의 정상 반영 여부 확인
