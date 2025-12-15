@@ -42,6 +42,8 @@ export class SearchPage {
 
         // 검색 결과가 나타날 때까지 대기
         await resultLink.waitFor({ state: 'visible' });
+        // 실제 클릭 (다른 요소 인터셉트 방지 위해 force 사용)
+        await resultLink.click({ force: true });
     }
 
     /**

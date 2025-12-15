@@ -3,6 +3,7 @@ test-results/
 
 # local env / secrets
 .env
+auth.json
 
 # OS / editor junk
 .DS_Store
